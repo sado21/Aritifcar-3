@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="Artifact 03">
+	<meta name="author" content="Josh Gibson">
+	<meta name="robots" content="noindex">
+	<title>Rhombus</title>
+	<link rel="stylesheet" href="artifact-03.css" type="text/css">
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/fantasque-sans-mono" type="text/css"/> 
+</head>
+
+<body>
+	<header>
+		<h1>Rhombus</h1>
+	</header>
+	<div id="content">
+		<div class="form">
+			<fieldset>
+				<legend>Rhombus configuration options</legend>
+				
+				<label>How high & wide should the rhombus be?</label><br>
+				<input type="text" id="rHeight" value="5" size="5">
+				<br><br>
+				
+				<label>What color should the odd columns be?</label><br>
+				<select id="colorOdd">
+					<option value="#0000FF">Blue</option>
+					<option value="#FF0000">Red</option>
+					<option value="#FF9900">Orange</option> 
+				</select>
+				<br><br>
+				
+				<label>What color should the even columns be?</label><br>
+				<select id="colorEven">
+					<option value="#CCCC00">Yellow</option>
+					<option value="#008000">Green</option>
+					<option value="#000000">Black</option>
+				</select>
+				<br><br>
+			
+				<label>What symbol should be used to make the rhombus?</label><br>
+				<input type="text" id="symbol" value="*" size="5">
+				<br><br>
+				
+				<button onclick="createRhombus(document.getElementById('rHeight').value, document.getElementById('colorEven').value, document.getElementById('colorOdd').value, document.getElementById('symbol').value);">Display Rhombus</button>
+			</fieldset>
+		</div>
+		
+		<div id="output"></div>
+		
+		<script src="artifact-03.js"></script>
+	
+	</div>
+	
+	<footer>
+		<hr>
+		<a href="http://www.w3.org/html/logo/">
+			<img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+		</a>
+		<br>
+		<a href="https://validator.w3.org/check?uri=referer" target="_blank">W3C Validator</a>
+		<br>
+		<a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">CSS Validator</a>
+	</footer>
+
+</body>
+
+</html>
